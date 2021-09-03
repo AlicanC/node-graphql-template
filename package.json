@@ -1,0 +1,44 @@
+{
+  "engines": {
+    "node": ">=14.15"
+  },
+  "scripts": {
+    "start": "cross-env NODE_ENV=development run-p start:*",
+    "start:tsc": "cross-env NODE_ENV=development yarn tsc --watch",
+    "start:nodemon": "cross-env NODE_ENV=development yarn nodemon -e js -w build --exec node build",
+    "test": "jest"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-bearer-token": "^2.4.0",
+    "express-graphql": "^0.12.0",
+    "express-promise-router": "^4.1.0",
+    "graphql": "^15.5.2",
+    "graphql-playground-middleware-express": "^1.7.22",
+    "graphql-upload": "^12.0.0",
+    "graphql-voyager": "^1.0.0-rc.31"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.4",
+    "@babel/preset-env": "^7.15.4",
+    "@babel/preset-typescript": "^7.15.0",
+    "@tsconfig/node14": "^1.0.1",
+    "@types/express": "^4.17.13",
+    "@types/graphql-upload": "^8.0.7",
+    "@types/jest": "^27.0.1",
+    "@types/node": "14",
+    "@types/supertest": "^2.0.11",
+    "@typescript-eslint/eslint-plugin": "^4.30.0",
+    "@typescript-eslint/parser": "^4.30.0",
+    "babel-jest": "^27.1.0",
+    "cross-env": "^7.0.3",
+    "eslint": "^7.32.0",
+    "eslint-plugin-import": "^2.24.2",
+    "jest": "^27.1.0",
+    "nodemon": "^2.0.12",
+    "npm-run-all": "^4.1.5",
+    "supertest": "^6.1.6",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.4.2"
+  }
+}

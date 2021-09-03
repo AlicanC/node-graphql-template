@@ -1,0 +1,11 @@
+{
+  "editor.formatOnSave": true,
+  "eslint.packageManager": "yarn",
+  "npm.packageManager": "yarn",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "eslint.rules.customizations": [
+    { "rule": "prettier/prettier", "severity": "off" }
+  ]
+}
